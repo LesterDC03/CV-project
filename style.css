@@ -17,8 +17,8 @@ h1 {
 }
 
 .container {
-    max-width: 500px;
-    margin: 100px auto;
+    max-width: 800px;
+    margin: 10px auto;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,7 +43,36 @@ ul {
 .contact-info p {
     margin: 5px 0;
 }
+/* this part is how to make an inline navigation with bars in between them */
+.navigation {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  padding: 0 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
 
-link {
-    
+.nav {
+    color:#f4f4f4;
+    text-decoration: none;
+    padding: 0;
+}
+
+.nav::before {
+    content: "|";
+    color: rgb(194, 187, 187);
+    padding: 0 10px;
+}
+.btn {
+    color: white;
+    background-color: #3a3b3b;
+    height: 40px;
+    width: 90px;
+    padding: 2px;
+    border: 2px solid black;
+    text-decoration: none;
 }
